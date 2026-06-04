@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pan od Tarasów | Tarasy kompozytowe</title>
+  <meta name="description" content="Pan od Tarasów - przygotowanie podłoża, konstrukcja i montaż tarasów kompozytowych." />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #f7f4ee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f2933;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .phone {
+      background: #c98b3a;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      background: linear-gradient(rgba(31,41,51,0.75), rgba(31,41,51,0.75)),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      max-width: 800px;
+      margin: 0 0 20px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #c98b3a;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: #1f2933;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1f2933;
+    }
+
+    .dark {
+      background: #1f2933;
+      color: white;
+    }
+
+    .dark h2 {
+      color: white;
+    }
+
+    .steps {
+      counter-reset: step;
+    }
+
+    .step {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .contact {
+      background: #e8dfd1;
+    }
+
+    form {
+      max-width: 650px;
+      display: grid;
+      gap: 14px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      background: #c98b3a;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 17px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      padding: 30px 8%;
+      text-align: center;
+    }
+
+    .sticky-mobile {
+      display: none;
+    }
+
+    @media (max-width: 800px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero {
+        padding: 70px 6%;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        gap: 12px;
+      }
+
+      .sticky-mobile {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+      }
+
+      .sticky-mobile a {
+        flex: 1;
+        text-align: center;
+        padding: 14px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .sticky-mobile .call {
+        background: #1f2933;
+      }
+
+      .sticky-mobile .quote {
+        background: #c98b3a;
+      }
+
+      body {
+        padding-bottom: 55px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Pan od Tarasów</div>
+    <a class="phone" href="tel:123456789">Zadzwoń: 123 456 789</a>
+  </header>
+
+  <section class="hero">
+    <h1>Tarasy kompozytowe od przygotowania podłoża po gotowy montaż</h1>
+    <p>
+      Wykonujemy solidne i estetyczne tarasy kompozytowe przy domach, ogrodach i lokalach.
+      Zajmujemy się przygotowaniem podłoża, konstrukcją oraz montażem desek.
+    </p>
+    <a class="btn" href="tel:123456789">Zadzwoń po wycenę</a>
+    <a class="btn" href="#kontakt">Poproś o darmową wycenę</a>
+  </section>
+
+  <section>
+    <h2>Kompleksowa realizacja tarasu</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Przygotowanie podłoża</h3>
+        <p>Wyrównujemy i przygotowujemy teren pod stabilną konstrukcję tarasu.</p>
+      </div>
+      <div class="card">
+        <h3>Konstrukcja pod taras</h3>
+        <p>Wykonujemy solidną konstrukcję nośną dopasowaną do miejsca i warunków.</p>
+      </div>
+      <div class="card">
+        <h3>Montaż desek kompozytowych</h3>
+        <p>Montujemy deski kompozytowe i dbamy o estetyczne wykończenie całości.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <h2>Dlaczego taras kompozytowy?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Trwałość na lata</h3>
+        <p>Deski kompozytowe są odporne na warunki atmosferyczne i codzienne użytkowanie.</p>
+      </div>
+      <div class="card">
+        <h3>Łatwa pielęgnacja</h3>
+        <p>Taras kompozytowy nie wymaga regularnego malowania ani impregnacji jak drewno.</p>
+      </div>
+      <div class="card">
+        <h3>Nowoczesny wygląd</h3>
+        <p>Estetyczne wykończenie pasuje do ogrodu, domu i nowoczesnej architektury.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Jak wygląda współpraca?</h2>
+    <div class="steps">
+      <div class="step"><strong>1. Kontakt</strong> — rozmawiamy o miejscu, metrażu i oczekiwaniach.</div>
+      <div class="step"><strong>2. Wycena</strong> — przygotowujemy zakres prac i koszt realizacji.</div>
+      <div class="step"><strong>3. Podłoże</strong> — przygotowujemy teren i stabilną bazę pod taras.</div>
+      <div class="step"><strong>4. Montaż</strong> — wykonujemy konstrukcję i montujemy deski kompozytowe.</div>
+      <div class="step"><strong>5. Odbiór</strong> — przekazujemy gotowy, estetyczny taras.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Najczęstsze pytania</h2>
+    <div class="card">
+      <h3>Ile kosztuje taras kompozytowy?</h3>
+      <p>Cena zależy od metrażu, rodzaju podłoża, konstrukcji i wybranych desek. Najlepiej skontaktować się po indywidualną wycenę.</p>
+
+      <h3>Czy przygotowujecie podłoże?</h3>
+      <p>Tak. Możemy wykonać usługę kompleksowo: od przygotowania terenu po gotowy taras.</p>
+
+      <h3>Ile trwa montaż?</h3>
+      <p>Czas realizacji zależy od wielkości tarasu i zakresu prac. Mniejsze tarasy zwykle wykonuje się szybciej.</p>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <h2>Poproś o darmową wycenę</h2>
+    <p>
+      Chcesz mieć trwały i estetyczny taras bez martwienia się o podłoże i montaż?
+      Skontaktuj się z nami.
+    </p>
+
+    <form>
+      <input type="text" placeholder="Imię" />
+      <input type="tel" placeholder="Telefon" />
+      <input type="email" placeholder="Email" />
+      <input type="text" placeholder="Lokalizacja" />
+      <input type="text" placeholder="Przybliżony metraż tarasu" />
+      <textarea placeholder="Wiadomość"></textarea>
+      <button type="submit">Wyślij zapytanie</button>
+    </form>
+  </section>
+
+  <footer>
+    <p><strong>Pan od Tarasów</strong></p>
+    <p>Telefon: 123 456 789 | Email: kontakt@panodtarasow.pl</p>
+    <p>Tarasy kompozytowe | Przygotowanie podłoża | Montaż tarasów</p>
+  </footer>
+
+  <div class="sticky-mobile">
+    <a class="call" href="tel:123456789">Zadzwoń</a>
+    <a class="quote" href="#kontakt">Wycena</a>
+  </div>
+
+</body>
+</html>
