@@ -125,9 +125,7 @@ function Hero() {
         </div>
         <div className="mt-10 grid max-w-2xl grid-cols-2 gap-4 text-sm md:grid-cols-4">
           {[
-            { n: "10+", l: "lat doświadczenia" },
-            { n: "200+", l: "metrów rocznie" },
-            { n: "100%", l: "własna ekipa" },
+            { n: "5+", l: "lat doświadczenia" },
             { n: "Śląsk", l: "obszar działania" },
           ].map((s) => (
             <div key={s.l} className="rounded-lg border border-white/15 bg-white/5 p-3 backdrop-blur">
@@ -225,7 +223,7 @@ function Benefits() {
 
 function Process() {
   const steps = [
-    { n: "01", t: "Bezpłatna wycena", d: "Rozmowa, pomiar, dobór desek i koloru. Wycena w 24–48 h." },
+    { n: "01", t: "Bezpłatna wycena", d: "Rozmowa, pomiar, dobór desek i koloru." },
     { n: "02", t: "Projekt i terminy", d: "Ustalamy układ, wykończenia i wygodny termin realizacji." },
     { n: "03", t: "Podłoże i konstrukcja", d: "Przygotowujemy stabilny grunt i montujemy ruszt nośny." },
     { n: "04", t: "Montaż i odbiór", d: "Układamy deski, wykonujemy detale, wspólnie odbieramy taras." },
@@ -274,11 +272,11 @@ function Gallery() {
 
 function Faq() {
   const faqs = [
-    { q: "Ile kosztuje taras kompozytowy?", a: "Cena zależy od metrażu, rodzaju desek i podłoża. Średnio 450–900 zł/m² z montażem. Po pomiarze przygotujemy konkretną wycenę." },
+    { q: "Ile kosztuje taras kompozytowy?", a: "Cena zależy od metrażu, rodzaju desek i podłoża. Po pomiarze przygotujemy konkretną wycenę." },
     { q: "Jak długo trwa realizacja?", a: "Standardowy taras 20–40 m² to zwykle 3–7 dni roboczych od momentu rozpoczęcia prac." },
     { q: "Czy montujecie na istniejącym podłożu?", a: "Tak, jeśli jest stabilne i równe. W innym przypadku przygotowujemy podłoże od podstaw." },
     { q: "Jaką dajecie gwarancję?", a: "Do 25 lat gwarancji producenta na deski oraz gwarancję na nasz montaż." },
-    { q: "Gdzie pracujecie?", a: "Działamy głównie na Śląsku — Katowice, Gliwice, Tychy, Bytom, Chorzów i okolice." },
+    { q: "Gdzie pracujecie?", a: "Działamy głównie na Śląsku — Katowice, Gliwice, Ruda Śląska, Tychy, Bytom, Chorzów i okolice." },
   ];
   return (
     <section id="faq" className="mx-auto max-w-3xl px-4 py-20">
