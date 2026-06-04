@@ -124,7 +124,7 @@ function Hero() {
           </a>
         </div>
         <div className="mt-10 grid max-w-2xl grid-cols-2 gap-4 text-sm md:grid-cols-4">
-          {[
+          /* {[
             { n: "5+", l: "lat doświadczenia" },
             { n: "Śląsk", l: "obszar działania" },
           ].map((s) => (
@@ -132,7 +132,7 @@ function Hero() {
               <div className="text-xl font-semibold">{s.n}</div>
               <div className="text-primary-foreground/80">{s.l}</div>
             </div>
-          ))}
+          ))} */
         </div>
       </div>
     </section>
@@ -246,28 +246,28 @@ function Process() {
   );
 }
 
-function Gallery() {
-  const imgs = [
-    { src: g1, alt: "Taras kompozytowy w ogrodzie" },
-    { src: g6, alt: "Taras kompozytowy z lotu ptaka" },
-    { src: g2, alt: "Konstrukcja drewniana pod taras" },
-    { src: g4, alt: "Montaż desek kompozytowych" },
-    { src: g5, alt: "Taras kompozytowy o zmierzchu" },
-    { src: g3, alt: "Detal grafitowych desek kompozytowych" },
-  ];
-  return (
-    <section id="realizacje" className="mx-auto max-w-6xl px-4 py-20">
-      <SectionHead eyebrow="Realizacje" title="Galeria naszych tarasów" />
-      <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3">
-        {imgs.map((im, i) => (
-          <div key={i} className={`relative overflow-hidden rounded-xl ${i === 0 ? "col-span-2 row-span-2 md:col-span-2 md:row-span-2" : ""}`}>
-            <img src={im.src} alt={im.alt} loading="lazy" width={1024} height={1024} className="aspect-square h-full w-full object-cover transition duration-500 hover:scale-105" />
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
+// function Gallery() {
+//   const imgs = [
+//     { src: g1, alt: "Taras kompozytowy w ogrodzie" },
+//     { src: g6, alt: "Taras kompozytowy z lotu ptaka" },
+//     { src: g2, alt: "Konstrukcja drewniana pod taras" },
+//     { src: g4, alt: "Montaż desek kompozytowych" },
+//     { src: g5, alt: "Taras kompozytowy o zmierzchu" },
+//     { src: g3, alt: "Detal grafitowych desek kompozytowych" },
+//   ];
+//   return (
+//     // <section id="realizacje" className="mx-auto max-w-6xl px-4 py-20">
+//     //   <SectionHead eyebrow="Realizacje" title="Galeria naszych tarasów" />
+//     //   <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3">
+//     //     {imgs.map((im, i) => (
+//     //       <div key={i} className={`relative overflow-hidden rounded-xl ${i === 0 ? "col-span-2 row-span-2 md:col-span-2 md:row-span-2" : ""}`}>
+//     //         <img src={im.src} alt={im.alt} loading="lazy" width={1024} height={1024} className="aspect-square h-full w-full object-cover transition duration-500 hover:scale-105" />
+//     //       </div>
+//     //     ))}
+//     //   </div>
+//     // </section>
+//   );
+// }
 
 
 function Faq() {
