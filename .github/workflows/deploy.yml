@@ -33,13 +33,24 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check output folders
+        run: |
+          echo "Root:"
+          ls -la
+          echo "Dist:"
+          ls -la dist || true
+          echo ".output:"
+          ls -la .output || true
+          echo ".output/public:"
+          ls -la .output/public || true
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.output/public
 
   deploy:
     environment:
