@@ -123,17 +123,6 @@ function Hero() {
             Poproś o darmową wycenę
           </a>
         </div>
-        <div className="mt-10 grid max-w-2xl grid-cols-2 gap-4 text-sm md:grid-cols-4">
-          /* {[
-            { n: "5+", l: "lat doświadczenia" },
-            { n: "Śląsk", l: "obszar działania" },
-          ].map((s) => (
-            <div key={s.l} className="rounded-lg border border-white/15 bg-white/5 p-3 backdrop-blur">
-              <div className="text-xl font-semibold">{s.n}</div>
-              <div className="text-primary-foreground/80">{s.l}</div>
-            </div>
-          ))} */
-        </div>
       </div>
     </section>
   );
