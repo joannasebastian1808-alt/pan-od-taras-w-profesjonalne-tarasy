@@ -56,7 +56,7 @@ function Index() {
       <Benefits />
       <Process />
       <Gallery />
-      <Testimonials />
+      
       <Faq />
       <Contact />
       <Footer />
