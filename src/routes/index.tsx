@@ -271,29 +271,6 @@ function Gallery() {
   );
 }
 
-function Testimonials() {
-  const t = [
-    { n: "Marta K.", c: "Katowice", q: "Taras wyszedł idealnie — solidna konstrukcja i bardzo czyste wykończenie. Polecam!" },
-    { n: "Paweł S.", c: "Gliwice", q: "Świetny kontakt, terminowość i jakość. Po dwóch sezonach taras wygląda jak nowy." },
-    { n: "Anna W.", c: "Tychy", q: "Profesjonalna ekipa. Doradzili kolor desek i wszystko dograli z architektem." },
-  ];
-  return (
-    <section className="bg-secondary/40 border-y border-border">
-      <div className="mx-auto max-w-6xl px-4 py-20">
-        <SectionHead eyebrow="Opinie" title="Co mówią klienci" />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {t.map((x) => (
-            <figure key={x.n} className="rounded-xl border border-border bg-card p-6">
-              <div className="text-accent">★★★★★</div>
-              <blockquote className="mt-3 text-sm leading-relaxed">„{x.q}"</blockquote>
-              <figcaption className="mt-4 text-sm font-semibold">{x.n} <span className="font-normal text-muted-foreground">· {x.c}</span></figcaption>
-            </figure>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Faq() {
   const faqs = [
