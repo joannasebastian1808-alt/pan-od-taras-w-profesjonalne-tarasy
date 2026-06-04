@@ -35,14 +35,10 @@ jobs:
 
       - name: Check output folders
         run: |
-          echo "Root:"
-          ls -la
           echo "Dist:"
-          ls -la dist || true
-          echo ".output:"
-          ls -la .output || true
-          echo ".output/public:"
-          ls -la .output/public || true
+          ls -la dist
+          echo "Dist client:"
+          ls -la dist/client
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -50,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public
+          path: ./dist/client
 
   deploy:
     environment:
