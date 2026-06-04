@@ -2,7 +2,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   vite: {
-    base: "/pan-od-taras-w-profesjonalne-tarasy/",
+    base: "/pan-od-tarasow/",
   },
   tanstackStart: {
     prerender: {
